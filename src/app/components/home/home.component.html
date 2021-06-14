@@ -1,0 +1,22 @@
+<div class='container'>
+
+  <div class='box'>
+    <div class='title has-text-centered'>
+      {{name}}
+    </div>
+
+    <figure class="image container is-128x128">
+      <img src="{{photo}}">
+    </figure>
+    <br>
+    <div class='has-text-centered'><b>Gênero:</b>&nbsp;{{genero}}</div>
+    <div class='has-text-centered'><b>Idade:</b>&nbsp;{{idade}}</div>
+    <div class='has-text-centered'><b>Cidade:</b>&nbsp;{{cidade}}</div>
+    <div class='has-text-centered'><b>Estado:</b>&nbsp;{{estado}}</div>
+    <div class='has-text-centered'><b>País:</b>&nbsp;{{pais}}</div>
+    <br>
+    <div class='has-text-centered'>
+      <button class='button' (click)='callPersona()'>Gera Nova Persona</button>
+    </div>
+  </div>
+</div>
