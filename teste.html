@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>desafio2</title>
+  <link rel="stylesheet" href="desafio.css">
+</head>
+
+
+
+<body>
+  <form name="meu_form">
+    <h1>convertendo binário para nominal e nominal em binário:</h1>
+    <!--onde coloco meus titulos-->
+
+    <h2>informe um número nominal para transformar em binário:</h2>
+    <label for="nom">número: </label>
+    <input type="text" id="nomid" name="nom" placeholder="número nominal" />
+
+    </br>
+    </br>
+    <h2>informe uma sequência binária para convertar a nominal: </h2>
+    <!--converter-->
+    <label for="seqbin">sequência: </label>
+    <input type="text" id="seqbinid" name="seqbin" placeholder="sequência binária" />
+
+    </br>
+    </br>
+    <input type="submit" onclick="Enviar();" value="Enviar" />
+
+    <script>
+
+      function Enviar() {
+        var binario = document.getElementById("seqbinid");
+        var nominal = document.getElementById("nomid");
+        var binario = parseInt(seqbin.value);
+        var nominal = parseInt(nom.value);
+        var array = [];
+        if (binario == parseInt || nominal == parseInt) {
+
+          while (nominal != 0) {
+            var nominal2 = nominal % 2
+            if (nominal2 == 0) {
+              array = array + 0;
+              nominal = nominal / 2
+              parseInt(nominal)
+            }
+
+            if (nominal2 == 1) {
+              array = array + 1;
+              nominal = nominal / 2
+              parseInt(nominal)
+            }
+          } document.write(array)
+
+
+
+
+        }
+      }
+
+    </script>
+
+  </form>
+
+
+
+</body>
+
+</html>
+
+<!--
+1 - É necessário que cada tarefa de conversão seja feita através de uma função
+
+2 - Reutilizar nomes de variaveis (binario e decimal) não é uma boa prática.
+
+3 - a construção binario == parseInt não é valida, pois parseInt é uma função que deve ter pelo menos um parametro. O correto seria parseInt(binario)
+
+-->

@@ -1,0 +1,21 @@
+<div class='container'>
+  <div class='card'>
+    <div class='card-header pt-3 pl-2'>
+      <div class='title'>{{comicTitle}}</div>
+    </div>
+    <div class='card-image has-text-centered pt-3'>
+      <img src='{{comicStripe}}'>
+    </div>
+    <div class='card-content'>
+      <div class='subtitle has-text-centered'>{{comicAlt}}</div>
+    </div>
+    <div class='card-footer'>
+      <div class=' container has-text-centered p-3'>
+        <button class='button' (click)="goFirst()">Primeiro</button><button class='button'
+          (click)="goPrevious()">Anterior</button><button class='button' (click)="goNext()">Próximo</button><button
+          class='button' (click)="goLast()">Último</button><button class='button'
+          (click)="goRandom()">Aleatório</button>
+      </div>
+    </div>
+  </div>
+</div>

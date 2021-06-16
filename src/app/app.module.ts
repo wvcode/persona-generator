@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { XkcdComponent } from './components/xkcd/xkcd.component';
 
 const appRoutes: Routes = [
   {
@@ -14,13 +15,18 @@ const appRoutes: Routes = [
   {
     path: 'home',
     component: HomeComponent
+  },
+  {
+    path: 'xkcd',
+    component: XkcdComponent
   }
 ];
 export default appRoutes;
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    XkcdComponent
   ],
   imports: [
     BrowserModule,
